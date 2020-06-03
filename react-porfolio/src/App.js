@@ -15,6 +15,12 @@ function App() {
       <div className="App-child2">
           two <code>src/App.js</code> and save to reload.
       </div>
+      <div className="App-child2">
+          two <code>src/App.js</code> and save to reload.
+      </div>
+      <div className="App-child3">
+          two <code>src/App.js</code> and save to reload.
+      </div>
     </div>
     </header>
   );
