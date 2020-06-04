@@ -1,51 +1,185 @@
 .App {
   text-align: center;
-  display:grid;
-    grid-template-columns:auto auto auto;
-    grid-gap: 10px;
+  /* display:grid;
+    grid-template-columns: 1fr, 2fr;
+    grid-gap: 10px; */
     /* height:400px; */
-    margin-left:20px;
-    margin-right:20px;
-    align-content: center;
-    justify-content: space-evenly
+
+    /* align-content: center; */
+    /* justify-content: space-evenly */
+    background-image:url("https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60");
 }
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+.nav {
+  height:150px;
+  background-image:url("https://images.unsplash.com/photo-1519418482467-96eca39b3f1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  display:flex;
+  justify-content: center;
+  flex-flow: row wrap;
+   align-content: space-around; 
+  width:100%; 
+  padding:20px;
+ } 
 
+.item1 {
+  height:120px;
+  flex:1;
+  align-content:space-evenly;
+  width:20%;
+  color:white;
+text-align: center;
+  /* background-position: stretch; */
+  
+}
+.item1:nth-of-type(1){
+  background-image:url("https://www.lovethispic.com/uploaded_images/236086-You-Have-Everything-You-Need-To-Build-Something-Far-Bigger-Than-Yourself.jpg");
+  background-repeat:no-repeat;
+  background-size: 90%;
+  background-position: center;
+}
+.item1:nth-of-type(2){
+  background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRv7cauFkytHM59PRf4rzs3a4l5IsQE58EG7AK8dw1Sw2ns7wBY&usqp=CAU");
+  background-repeat:no-repeat;
+  background-position: center;
+}
+.item1:nth-of-type(3){
+  background-image: url("https://images.unsplash.com/photo-1519373069499-b54fc6ab1802?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  background-position: center;
+}
+
+.top-nav{
+  height:30px;
+  background-color: rgba(150,0,0,.6);
+  /* background-image:url("https://images.unsplash.com/photo-1519418482467-96eca39b3f1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"); */
+  display:flex;
+  justify-content: center;
+  flex-flow: row wrap;
+   align-content: space-around; 
+  width:100%; 
+  padding:20px;
+}
+.top-item{
+  height:80%;
+  width:80%;
+  flex:1;
+  align-content:space-evenly;
+  width:20%;
+  color:white;
+text-align: center;
+}
+.fas {
+  transform: rotate(-45deg);
+  color:black;
+}
+img>.top-image{
+  height:30px;
+  flex:1;
+  align-content:space-evenly;
+   
+}
+.top-item:nth-of-type(1){
+  height:50px;
+  text-decoration-line: overline;
+
+}
+.top-item:nth-of-type(2){
+  height:50px;
+  letter-spacing: 5px;
+  font-size: 120%;
+  font-weight: 700;
+  text-decoration-line: overline;
+}
+.top-item:nth-of-type(3){
+  height:50px;
+  letter-spacing: 5px;
+  /* font-size: 120%; */
+  /* font-weight: 700; */
+  text-decoration-line: overline;
+}
+.projects{
+  background-image:url("https://images.unsplash.com/photo-1577177436932-ec206df8ba87?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1334&q=80") ;
+  /* transform: rotate(-5deg); */
+  border-top: 10px solid yellow;
+  height: 100vh;
+  width:60%;
+  border-radius:50%;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-.App-child {
-  border: 2px solid black;
-  background-color: rgba(255, 255, 255, 0.8);
-padding:20px;
-height:40px;
-grid-column: 1 / 4;
-}
-.App-child1 {
-  border: 2px solid black;
-  background-color: rgba(255, 255, 255, 0.8);
-padding:20px;
-height:1000px;
 
- 
+.box1 {
+  /* background-color: rgba(0, 0, 0, .4); */
+  grid-column-start: 1;
+  grid-column-end: 4;
+  z-index: -1;
+  height:30px;
+  margin-bottom:-80px;
+  
 }
-.App-child2 {
-border: 2px solid black;
-background-color: rgba(255, 255, 255, 0.8);
-padding:20px;
-height:100px;
+.box2 {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRmS4-b2MJP5pgsLZT0TPLmiRNRXPwQxVfcqih2XMbbe181NuLs&usqp=CAU");
+  background-size: cover; 
+  grid-row: 2/5;
+   border-right:2px solid black;
+   height:80%;
+   width:100%;
+  /* grid-row-end: 5;  */
+  /* width:100px; */
+
 }
-.App-child3 {
-border: 2px solid black;
-background-color: rgba(255, 255, 255, 0.8);
-padding:20px;
-height:100px;
-grid-column: 2/4
+.box3 {
+  background-position: center;
+  background-size: center;
+  background-image:url("https://images.unsplash.com/photo-1553341216-6d8fdfac8bee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+}
+.box4 {
+  background: black;
+  color: white;
+  grid-row: 2/4;
+  grid-column: 3/4;
+  background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQAp9P1Dv8T3Z5kyV5wAox-wDD1eBrwModL0rwTBrKUIHw7sOO9&usqp=CAU");
+  height:85%;
+  width:100%;
+  padding-bottom: 40px;
+  margin-bottom:20px;
+  padding-top:-40px;
+  background-size: cover;
+}
+.box5 {
+  background-position: center;
+  background-image:url("https://images.unsplash.com/photo-1553341216-6d8fdfac8bee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+}
+.box6 {
+  /* background: black; */
+  grid-column-start: 1;
+  grid-column-end: 4;
+  z-index: -1;
+  height:30px;
+  margin-bottom:-80px;
+  
+}
+
+.boxes {
+  grid-gap:10px;
+  height: 110vh;
+  margin-top:20px;
+  width:120%;
+  /* background-image:cover url("https://images.unsplash.com/photo-1505855796860-aa05646cbf1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"); */
+  background-color: rgba(0, 0, 0, .4);
+  background-repeat: no-repeat;
+  border-top:5px solid white;
+  transform: rotate(5deg);
+  display:grid;
+  grid-template-columns: 30% 40% 30% ;
+  grid-template-rows: 1fr 1 fr;
+justify-content:space-around ;
+  overflow:none;
 }
 
 
@@ -58,7 +192,7 @@ grid-column: 2/4
   justify-content: center;
   /* font-size: calc(10px + 2vmin); */
   color: black;
-  grid-template-columns: 30% 30% 40%;
+  /* grid-template-columns: 30% 20% 40%; */
   border-color: black;
   border-width:100px;
 }

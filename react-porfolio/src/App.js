@@ -1,28 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+// import logo from './logo.svg';
+import "./App.css";
+import Nav from "./Nav";
+import Main from "./Main";
+import NavTop from "./NavTop";
+import Projects from "./Projects";
 
 function App() {
   return (
-    <header>
-    <div className="App">
-      <div className="App-child">
-          Edit <code>src/App.js</code> and save to reload.
-      </div>
-      <div className="App-child1">
-          two <code>src/App.js</code> and save to reload.
-      </div>
-      <div className="App-child2">
-          two <code>src/App.js</code> and save to reload.
-      </div>
-      <div className="App-child2">
-          two <code>src/App.js</code> and save to reload.
-      </div>
-      <div className="App-child3">
-          two <code>src/App.js</code> and save to reload.
+    <div className="header">
+      <NavTop />
+      <Nav />
+      <div className="App">
+        <Main />
+        <Projects />
       </div>
     </div>
-    </header>
   );
 }
 
