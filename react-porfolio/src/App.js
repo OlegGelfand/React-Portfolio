@@ -5,8 +5,9 @@ import Nav from "./Nav";
 import Main from "./Main";
 import NavTop from "./NavTop";
 import Projects from "./Projects";
-import Chart from "./Chart";
+// import Chart from "./Chart";
 import About from "./About";
+// import Chart2 from "./Chart2";
 
 function App() {
 
@@ -17,7 +18,8 @@ function App() {
       <div className="App">
         <Main />
         <Projects />
-        <Chart />
+        {/* <Chart /> */}
+        {/* <Chart2 /> */}
         <About />
       </div>
     </div>

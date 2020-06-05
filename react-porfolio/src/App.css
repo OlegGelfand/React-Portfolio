@@ -307,10 +307,12 @@ justify-content:space-around ;
 /* pie chart */
 .highcharts-figure, .highcharts-data-table table {
   min-width: 320px; 
-  max-width: 660px;
+  /* max-width: 800px; */
   margin: 1em auto;
 }
-
+.highcharts-background{
+  background-color: green;
+}
 .highcharts-data-table table {
 	font-family: Verdana, sans-serif;
 	border-collapse: collapse;
@@ -336,6 +338,10 @@ justify-content:space-around ;
   background: #f8f8f8;
 }
 .highcharts-data-table tr:hover {
-  background: #f1f7ff;
-}
- 
+   background: #f1f7ff; 
+} 
+
+
+input[type="number"] {
+	min-width: 50px;
+} 
