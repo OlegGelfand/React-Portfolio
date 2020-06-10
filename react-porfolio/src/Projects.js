@@ -59,7 +59,7 @@ function Projects() {
           data: [['not sure yet',4],['ill add something soon',2],['something will be here soon',1] ]
         }, {
           id:'vanillajs',
-          data: [['Toyota',4],['Honda',2],['Ford',1],['Chevy',1] ]
+          data: [['',4],['to do list',2],['Ford',1],['Chevy',1] ]
         },
 
       ]

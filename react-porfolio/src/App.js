@@ -1,16 +1,13 @@
-import React, {Component} from "react";
-// import logo from './logo.svg';
+import React from "react";
 import "./App.css";
 import Nav from "./Nav";
 import Main from "./Main";
 import NavTop from "./NavTop";
 import Projects from "./Projects";
-// import Chart from "./Chart";
-import About from "./About";
-// import Chart2 from "./Chart2";
+import Footer from "./Footer";
+import { Switch, Route } from "react-router";
 
 function App() {
-
   return (
     <div className="header">
       <NavTop />
@@ -18,13 +15,17 @@ function App() {
       <div className="App">
         <Main />
         <Projects />
-        {/* <Chart /> */}
-        {/* <Chart2 /> */}
-        <About />
+        <Footer />
       </div>
+      <Switch>
+      {/* <Route exact={true} path="/" component={Main} />
+          <Route exact path="/footer" component={Footer} /> */}
+          {/* <Route exact path="/coffeePage" component={CoffeePage} /> */}
+          {/* <Route exact path="/roastersPage" component={RoastersPage} /> */}
+          {/* <Route exact path="/feedback" component={Feedback} /> */}
+      </Switch>
     </div>
   );
 }
-
 
 export default App;

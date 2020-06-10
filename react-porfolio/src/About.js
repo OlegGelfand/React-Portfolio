@@ -1,9 +1,26 @@
-import React from "react";
+import React, {useState} from "react";
 
-function About() {
+function About()  {
+  const [display, setDisplay] = useState(true);
+
+const handleDisplayAboutMe = ()=>  {
+   setDisplay(false)
+}
+const handleHideAboutMe = ()=>  {
+  setDisplay(true)
+}
+console.log(display)
+
   return (
     <div className="about-me">
-      
+    
+     
+      {/* {
+        display?
+        <div>i did it</div>:null
+        
+      } */}
+      {/* <button onClick={!display ? handleHideAboutMe : handleDisplayAboutMe}>Click me </button> */}
       <div className="about">
        
        <div className ="square1">Yitzi
