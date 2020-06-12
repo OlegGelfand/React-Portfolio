@@ -4,6 +4,7 @@ import HighchartsReact from 'highcharts-react-official';
 import drilldown from 'highcharts/modules/drilldown';
 import './App.css';
 import About from './About'
+import { Link } from "react-router-dom";
 
 drilldown(Highcharts);
 
@@ -83,20 +84,13 @@ function Projects() {
       <div className="container">
         <HighchartsReact highcharts={Highcharts} options={options}/>
       </div>
-      <div className="footer">
-      {/* <Link to="/main">
-                    <p>main</p>
-                  </Link> */}
-      <button  onClick={!display ? handleHideAboutMe : handleDisplayAboutMe}>
-          {" "}
-          <h1>about me</h1>{" "}
-        </button>
-        {display ? (
-          <div>
-            <About />
-          </div>
-        ) : null}
-      </div>
+ 
+        <Link  to="/">
+            <p>Home</p>
+          </Link>
+          <Link  to="/aboutme">
+            <p>About Me</p>
+          </Link>
     </div>
   );
 }
