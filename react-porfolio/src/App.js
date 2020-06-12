@@ -11,19 +11,21 @@ function App() {
   return (
     <div className="header">
       <NavTop />
+      <div class="vl"></div>
       <Nav />
       <div className="App">
-        <Main />
+        {/* <Main /> */}
         <Projects />
-        <Footer />
+       
       </div>
       <Switch>
       {/* <Route exact={true} path="/" component={Main} />
-          <Route exact path="/footer" component={Footer} /> */}
+          {/* <Route exact path="/footer" component={Footer} /> */}
           {/* <Route exact path="/coffeePage" component={CoffeePage} /> */}
           {/* <Route exact path="/roastersPage" component={RoastersPage} /> */}
           {/* <Route exact path="/feedback" component={Feedback} /> */}
-      </Switch>
+      </Switch> 
+      <Footer />
     </div>
   );
 }

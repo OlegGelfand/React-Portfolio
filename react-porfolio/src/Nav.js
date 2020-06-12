@@ -9,6 +9,9 @@ function Nav() {
                     <p>footer</p>
                   </Link> */}
         <div className="item1">
+           {/* <Link to="/footer">
+                    <p>footer</p>
+                  </Link> */}
           <p className="box-1">One</p>
         </div>
         <div className="item1">
@@ -17,6 +20,7 @@ function Nav() {
         <div className="item1">
           <p>Three</p>
         </div>
+        
       </div>
    
   );

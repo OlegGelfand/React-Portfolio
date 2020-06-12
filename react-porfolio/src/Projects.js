@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 import drilldown from 'highcharts/modules/drilldown';
 import './App.css';
+import About from './About'
 
 drilldown(Highcharts);
 
 function Projects() {
+  const [display, setDisplay] = useState(false);
 
+  const handleDisplayAboutMe = () => {
+    setDisplay(false);
+  };
+  const handleHideAboutMe = () => {
+    setDisplay(true);
+  };
   const options = {
     chart: 
     {
@@ -53,7 +61,7 @@ function Projects() {
       series:[
         {
           id:'react',
-          data: [['Portfolio',4],['TeslaApp',2]]
+          data: [['Portfolio',1],['TeslaApp',1]]
         }, {
           id:'python',
           data: [['not sure yet',4],['ill add something soon',2],['something will be here soon',1] ]
@@ -68,9 +76,26 @@ function Projects() {
     
   };
   return (
+  
+    
     <div>
+     
       <div className="container">
         <HighchartsReact highcharts={Highcharts} options={options}/>
+      </div>
+      <div className="footer">
+      {/* <Link to="/main">
+                    <p>main</p>
+                  </Link> */}
+      <button  onClick={!display ? handleHideAboutMe : handleDisplayAboutMe}>
+          {" "}
+          <h1>about me</h1>{" "}
+        </button>
+        {display ? (
+          <div>
+            <About />
+          </div>
+        ) : null}
       </div>
     </div>
   );
