@@ -30,10 +30,15 @@ function About() {
     setDisplay3(true);
   };
   const handleDisplayAboutMeAll = () => {
-    setDisplayAll(false);
+    setDisplay1(false);
+    setDisplay2(false);
+    setDisplay3(false);
   };
   const handleHideAboutMeAll = () => {
-    setDisplayAll(true);
+    // setDisplayAll(true);
+    setDisplay1(true);
+    setDisplay2(true);
+    setDisplay3(true);
   };
   const items = [
     {
@@ -93,7 +98,7 @@ function About() {
   return (
     <div>
       <NavTop />
-      
+      <div className= "about-background">
       <div className="about-me-text">
       <div className="title"><h4>About Me</h4></div>
       <h4>
@@ -104,7 +109,7 @@ function About() {
 
       <div className="main-button">
         <button
-          onClick={!displayAll ? handleHideAboutMeAll : handleDisplayAboutMeAll}
+          onClick={!display1 && display2 && display3 ? handleHideAboutMeAll : handleDisplayAboutMeAll}
         >
           {" "}
           <h1>The Family</h1>{" "}
@@ -127,8 +132,10 @@ function About() {
                 <h1>Pinny</h1> <UncontrolledCarousel items={items} />
               </div>
             </div>
+            
           </div>
         ) : null}
+      </div>
       </div>
       {/* displaying all at once */}
       <div className="about">
@@ -164,11 +171,13 @@ function About() {
             </button>
             {display3 ? <UncontrolledCarousel items={items} /> : null}
           </div>
-        </div>
+        
+      </div>
       </div>
       <Hobbies />
       <Nav />
     </div>
+    
   );
 }
 

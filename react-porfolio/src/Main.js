@@ -15,14 +15,14 @@ function Main() {
     <div className="box6"><h1></h1></div>
   </div>
 
-  );
+  
   {/* <Switch>
       <Route exact={true} path="/" component={NavTop} />
           <Route exact path="/aboutme" component={About} />
           {/* <Route exact path="/coffeePage" component={CoffeePage} /> */}
           {/* <Route exact path="/roastersPage" component={RoastersPage} /> */}
           {/* <Route exact path="/feedback" component={Feedback} /> */}
-      {/* </Switch>  */} */}
+      {/* </Switch>   */}
   </div>
     );
 }
