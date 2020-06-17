@@ -5,18 +5,12 @@ import drilldown from 'highcharts/modules/drilldown';
 import './App.css';
 import About from './About'
 import { Link } from "react-router-dom";
+import NavTop from "./NavTop";
 
 drilldown(Highcharts);
 
 function Projects() {
-  const [display, setDisplay] = useState(false);
 
-  const handleDisplayAboutMe = () => {
-    setDisplay(false);
-  };
-  const handleHideAboutMe = () => {
-    setDisplay(true);
-  };
   const options = {
     chart: 
     {
@@ -80,17 +74,12 @@ function Projects() {
   
     
     <div>
-     
-      <div className="container">
+     <NavTop />
+      <div className="project-container">
         <HighchartsReact highcharts={Highcharts} options={options}/>
       </div>
  
-        <Link  to="/">
-            <p>Home</p>
-          </Link>
-          <Link  to="/aboutme">
-            <p>About Me</p>
-          </Link>
+      
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function Skills() {
   return (
-      <div>
+      <div className="main-skills-container">
           <p className="skills-title"><h7>skills</h7></p>
      
     <div className="skills-container">

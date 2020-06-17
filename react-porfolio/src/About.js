@@ -98,44 +98,21 @@ function About() {
   return (
     <div>
       <NavTop />
+      <div className = "background-grid">
       <div className= "about-background">
+        
       <div className="about-me-text">
+        
       <div className="title"><h4>About Me</h4></div>
+      <img width="75%" src="https://res.cloudinary.com/dkng1fqtz/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1591980778/IMG_3306_sdoldn.jpg"></img>
       <h4>
+
         Thank you for viewing my site, particularly this page. My Family is What
         does it for me, what keeps me going.
         3 incredible kids, and an incredible Wife.</h4>
       </div>
 
-      <div className="main-button">
-        <button
-          onClick={!display1 && display2 && display3 ? handleHideAboutMeAll : handleDisplayAboutMeAll}
-        >
-          {" "}
-          <h1>The Family</h1>{" "}
-        </button>
-        {/* displaying all at once */}
-        {displayAll ? (
-          <div className="about">
-            <div className="about-me">
-              <div className="footer">
-                <h1>Yitzi</h1> <UncontrolledCarousel items={items} />
-              </div>
-            </div>
-            <div className="about-me">
-              <div className="footer">
-                <h1>Sara</h1> <UncontrolledCarousel items={items} />
-              </div>
-            </div>
-            <div className="about-me">
-              <div className="footer">
-                <h1>Pinny</h1> <UncontrolledCarousel items={items} />
-              </div>
-            </div>
-            
-          </div>
-        ) : null}
-      </div>
+
       </div>
       {/* displaying all at once */}
       <div className="about">
@@ -171,10 +148,22 @@ function About() {
             </button>
             {display3 ? <UncontrolledCarousel items={items} /> : null}
           </div>
-        
+          </div>
+          <div className="about-me">
+          <div className="button">
+            <button 
+              onClick={!display1 && !display2 && !display3 ? handleHideAboutMeAll : handleDisplayAboutMeAll }
+            >
+              {" "}
+              <h1>Family</h1>{" "}
+            </button>
+            {/* {displayAll ? <UncontrolledCarousel items={items} /> : null} */}
+          </div>
+          </div>
       </div>
+      
       </div>
-      <Hobbies />
+      <Hobbies /> 
       <Nav />
     </div>
     
