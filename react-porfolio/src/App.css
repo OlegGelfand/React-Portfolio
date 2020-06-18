@@ -576,12 +576,13 @@ img {
 }
 .resume {
   background-color: gray;
-  height: 500px;
+  height: 300px;
   border-bottom: 50px solid orange;
   border-top: 50px solid orange;
   border-left: 60px solid transparent;
   text-align: center;
-  padding-top: 15%;
+  padding-top: 2%;
+  align-content: center;
 }
 
 .skills-container {
@@ -593,6 +594,7 @@ img {
 }
 .skills {
   justify-content: space-between;
+  border:2px solid white;
   border-top: 25px solid transparent;
   border-left: 50px solid transparent;
   /* border-bottom: 25px solid transparent; */
@@ -603,7 +605,7 @@ ul {
   color: white;
   font-weight: 500;
   font-size: 20px;
-  letter-spacing: 2px;
+  letter-spacing: px;
 }
 .my-docs{
   list-style-type: none;
@@ -613,27 +615,39 @@ ul {
   
 }
 li{
-padding:5%;
+padding:1%;
 }
 .title {
   /* text-align: center; */
   letter-spacing: 2px;
-  color: orange;
+  color: white;
+  border: 2px solid white;
   padding: 2px;
-  text-shadow: rgba(107, 107, 107, 0.2), rgba(107, 107, 0, 0.2);
+  
 }
 
 .skills:nth-last-of-type(odd) > h3 {
   background-color: gray;
-  color: rgba(247, 169, 12);
+  color: white;
+  font-size:24px;
+  letter-spacing: 10px;
+  margin-left:15%;
+  
 }
 .skills:nth-last-of-type(even) > h3 {
   background-color: rgba(247, 169, 12, 0.6);
-  color: gray;
+  color: white;
+  margin-right:10%;
+  font-size:24px;
+  letter-spacing: 10px;
 }
 .skills:nth-last-of-type(odd) {
+  text-decoration-color: orangered;
+  text-decoration: orangered;
   background-color: orange;
+  text-align: center;
   color: white;
+  border-left:2px solid white;
 }
 .skills:nth-last-of-type(even) {
   background-color: gray;
@@ -644,7 +658,7 @@ padding:5%;
   grid-column-end: 3;
   /* height:400px; */
   background-color: gray;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTq_zZU2f5J9Ocm-_tewFLzCFHXK0S3z3kwc9PiqZKJyKu3yzOK&usqp=CAU");
   background-repeat: no-repeat;
   background-position-x: 20%;
@@ -652,7 +666,7 @@ padding:5%;
   height: 350px;
   padding-left: 50%;
   margin-top: -15px;
-  padding-top: 5%;
+  /* padding-top: 5%; */
   /* border-bottom: 50px solid #555; */
   /* border-top: 50px solid #555; 
  border-right: 120px solid transparent;
@@ -666,12 +680,13 @@ padding:5%;
   border-top: 10px solid #555;
   border-left: 130px solid transparent; */
   text-transform: uppercase;
-  letter-spacing: 14px;
+  letter-spacing: 6px;
   /* border-radius: 2%; */
   /* border-color:white; */
   border-right: 120px solid transparent;
   background-color: orange;
-  height: 50px;
+  height: 40px;
+
   width: 100%;
   font-size: 20px;
   /* margin-left: 40%; */

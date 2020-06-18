@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import react from "react";
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 import drilldown from 'highcharts/modules/drilldown';
 import './App.css';
-import About from './About'
+import ProjectList from './ProjectList'
 import { Link } from "react-router-dom";
 import NavTop from "./NavTop";
 
@@ -11,6 +11,11 @@ drilldown(Highcharts);
 
 function Projects() {
 
+  
+
+
+ 
+ 
   const options = {
     chart: 
     {
@@ -74,10 +79,13 @@ function Projects() {
   
     
     <div>
+
      <NavTop />
+     
       <div className="project-container">
         <HighchartsReact highcharts={Highcharts} options={options}/>
       </div>
+      <ProjectList />
  
       
     </div>
