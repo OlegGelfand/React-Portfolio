@@ -3,7 +3,7 @@ import "./App.css";
 import Resume from "./Resume";
 import About from "./About";
 import Footer from "./Footer";
-import Projects from "./Projects";
+import ProjectListItem from "./ProjectListItem";
 import Main from "./Main";
 import Skills from "./Skills";
 import { Link } from "react-router";
