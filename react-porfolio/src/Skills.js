@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 
 function Skills() {
   return (
       <div className="main-skills-container">
-          <p className="skills-title"><h7>skills</h7></p>
+          <p className="skills-title"><span>skills</span></p>
      
     <div className="skills-container">
         

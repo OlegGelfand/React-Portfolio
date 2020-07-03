@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 function Hobbies() {
   return (
@@ -12,9 +12,9 @@ function Hobbies() {
       <div>
       <div className="dropdown">I love gardening
       <div className="dropdown-content">
-      <img src="https://res.cloudinary.com/dkng1fqtz/image/upload/v1591980778/IMG_0391_k4yahl.jpg"></img>
-      <img src="https://res.cloudinary.com/dkng1fqtz/image/upload/v1591980778/IMG_0391_k4yahl.jpg"></img>
-      <img src="https://res.cloudinary.com/dkng1fqtz/image/upload/v1591980778/IMG_0390_walyi4.jpg"></img>
+      <img src="https://res.cloudinary.com/dkng1fqtz/image/upload/v1591980778/IMG_0391_k4yahl.jpg" alt="1"></img>
+      <img src="https://res.cloudinary.com/dkng1fqtz/image/upload/v1591980778/IMG_0391_k4yahl.jpg"alt="2"></img>
+      <img src="https://res.cloudinary.com/dkng1fqtz/image/upload/v1591980778/IMG_0390_walyi4.jpg"alt="3"></img>
       {/* <img src="https://res.cloudinary.com/dkng1fqtz/image/upload/v1591980778/IMG_0390_walyi4.jpg"></img> */}
       </div>
       </div>
@@ -26,10 +26,10 @@ function Hobbies() {
       <div className="dropdown">I love gardening
       <div className="dropdown-content">
       
-      <img src="https://res.cloudinary.com/dkng1fqtz/image/upload/v1591980778/IMG_3306_sdoldn.jpg"></img>
-      <img src="https://res.cloudinary.com/dkng1fqtz/image/upload/v1591980778/IMG_3307_ohtlyc.jpg"></img>
-      <img src="https://res.cloudinary.com/dkng1fqtz/image/upload/v1591980778/IMG_3315_n9ssof.jpg"></img>
-      <img src="https://res.cloudinary.com/dkng1fqtz/image/upload/v1591980778/IMG_3318_nm74pf.jpg"></img>
+      <img src="https://res.cloudinary.com/dkng1fqtz/image/upload/v1591980778/IMG_3306_sdoldn.jpg"alt="4"></img>
+      <img src="https://res.cloudinary.com/dkng1fqtz/image/upload/v1591980778/IMG_3307_ohtlyc.jpg"alt="5"></img>
+      <img src="https://res.cloudinary.com/dkng1fqtz/image/upload/v1591980778/IMG_3315_n9ssof.jpg"alt="6"></img>
+      <img src="https://res.cloudinary.com/dkng1fqtz/image/upload/v1591980778/IMG_3318_nm74pf.jpg"alt="7"></img>
       </div>
       </div></div>
       </div>

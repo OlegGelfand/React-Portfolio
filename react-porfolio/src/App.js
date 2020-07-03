@@ -1,15 +1,15 @@
 import React, {createContext, useState,useEffect} from "react";
 import "./App.css";
-import Resume from "./Resume";
-import About from "./About";
-import Footer from "./Footer";
-import ProjectListItem from "./ProjectListItem";
+// import Resume from "./Resume";
+// import About from "./About";
+// import Footer from "./Footer";
+// import ProjectListItem from "./ProjectListItem";
 import Main from "./Main";
-import Skills from "./Skills";
-import { Link } from "react-router";
-import { Switch, Route } from "react-router";
+// import Skills from "./Skills";
+// import { Link } from "react-router";
+// import { Switch, Route } from "react-router";
 
-function App() {
+function App(props) {
 
   const [projects, setProjects] = useState([]);
 
@@ -27,7 +27,7 @@ function App() {
     makeAPICall();
   }, []);
 
-console.log(projects);
+// console.log(projects);
 
 
   return (

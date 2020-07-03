@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 // import Resume from "./Resume";
-import About from "./About";
+// import About from "./About";
 import NavTop from "./NavTop";
-import Projects from "./Projects";
+// import Projects from "./Projects";
 import Footer from "./Footer";
 import Skills from "./Skills";
 import Resume from "./Resume";
@@ -16,7 +16,7 @@ function Home() {
        <NavTop />
        <Skills />
       <Resume /> 
-       <Footer /> 
+       {/* <Footer />  */}
     
        
    </div>

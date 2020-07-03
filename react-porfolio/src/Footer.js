@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 
 function Footer() {
-    const [display, setDisplay] = useState(false);
+    // const [display, setDisplay] = useState(false);
 
-    const handleDisplayAboutMe = () => {
-      setDisplay(false);
-    };
-    const handleHideAboutMe = () => {
-      setDisplay(true);
-    };
+    // const handleDisplayAboutMe = () => {
+    //   setDisplay(false);
+    // };
+    // const handleHideAboutMe = () => {
+    //   setDisplay(true);
+    // };
   return (
    <footer>
     

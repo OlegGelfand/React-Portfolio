@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { UncontrolledCarousel } from "reactstrap";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Nav from "./Nav";
 import NavTop from "./NavTop";
 import Hobbies from "./Hobbies";
@@ -8,7 +8,7 @@ function About() {
   const [display1, setDisplay1] = useState(false);
   const [display2, setDisplay2] = useState(false);
   const [display3, setDisplay3] = useState(false);
-  const [displayAll, setDisplayAll] = useState(false);
+  // const [displayAll, setDisplayAll] = useState(false);
   const handleDisplayAboutMe1 = () => {
     setDisplay1(false);
   };
@@ -104,15 +104,13 @@ function About() {
       <div className="about-me-text">
         
       <div className="title"><h4>About Me</h4></div>
-      <img width="75%" src="https://res.cloudinary.com/dkng1fqtz/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1591980778/IMG_3306_sdoldn.jpg"></img>
+      <img width="75%" src="https://res.cloudinary.com/dkng1fqtz/image/upload/v1584115531/IMG_0103_tu9xon.jpg" alt="8"></img>
       <h4>
 
-        Thank you for viewing my site, particularly this page. My Family is What
-        does it for me, what keeps me going.
-        3 incredible kids, and an incredible Wife.</h4>
+        Thank you for viewing my site, particularly this page. I've been fortunate enough to have fulfilled a dream at a young age. I am now married with 3 kids, and aim to use my life to their benefit as best as I am able. Building a family, is something I've always wanted to do, in conjunction, building in general is what drives me. Whether it is woodworking, watching a garden grow or </h4>
       </div>
 
-
+ 
       </div>
       {/* displaying all at once */}
       <div className="about">

@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Resume from "./Resume";
+// import { Link } from "react-router-dom";
+// import Resume from "./Resume";
 function Nav() {
   return (
    
@@ -13,13 +13,13 @@ function Nav() {
            {/* <Link to="/footer">
                     <p>footer</p>
                   </Link> */}
-          <p className="box-1">One</p>
+          <p className="box-1"></p>
         </div>
         <div className="item1">
-          <p>Two</p>
+         
         </div>
         <div className="item1">
-          <p>Three</p>
+        
         </div>
         
       </div>
