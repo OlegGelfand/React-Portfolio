@@ -9,9 +9,10 @@ import Main from "./Main";
 // import { Link } from "react-router";
 // import { Switch, Route } from "react-router";
 
-function App(props) {
+function App() {
 
   const [projects, setProjects] = useState([]);
+  const [projectIndex,setProjectIndex]=useState();
 
 
   useEffect(() => {
@@ -26,9 +27,9 @@ function App(props) {
     };
     makeAPICall();
   }, []);
-
-// console.log(projects);
-
+if(projects.feed){
+// console.log('pro',projects.feed.entry[3);
+}
 
   return (
     
@@ -36,7 +37,9 @@ function App(props) {
       <UniversalContext.Provider value={
         {
           //anything i need for application
-          projects
+          projects,
+          projectIndex,
+          setProjectIndex
         }
       }
       ><Main /></UniversalContext.Provider>

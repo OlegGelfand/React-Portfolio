@@ -4,6 +4,7 @@ import HighchartsReact from 'highcharts-react-official';
 import drilldown from 'highcharts/modules/drilldown';
 import './App.css';
 import ProjectList from './ProjectList'
+import Footer from './Footer'
 // import { Link } from "react-router-dom";
 import NavTop from "./NavTop";
 
@@ -86,6 +87,7 @@ function Projects() {
         <HighchartsReact highcharts={Highcharts} options={options}/>
       </div>
       <ProjectList />
+      <Footer />
  
       
     </div>

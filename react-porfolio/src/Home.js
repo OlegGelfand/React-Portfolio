@@ -11,12 +11,11 @@ function Home() {
 
   return (
    <div>
-       Route to here
-       
+  
        <NavTop />
        <Skills />
       <Resume /> 
-       {/* <Footer />  */}
+       <Footer />  
     
        
    </div>

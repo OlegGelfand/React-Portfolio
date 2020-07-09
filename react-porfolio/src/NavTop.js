@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 // import Skills from "./Skills";
 // import Resume from "./Resume";
 function NavTop() {
+  
   return (
     <header>
       <div className="top-nav">

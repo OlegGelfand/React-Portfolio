@@ -4,6 +4,7 @@ import { UncontrolledCarousel } from "reactstrap";
 import Nav from "./Nav";
 import NavTop from "./NavTop";
 import Hobbies from "./Hobbies";
+import Footer from "./Footer";
 function About() {
   const [display1, setDisplay1] = useState(false);
   const [display2, setDisplay2] = useState(false);
@@ -103,15 +104,17 @@ function About() {
         
       <div className="about-me-text">
         
-      <div className="title"><h4>About Me</h4></div>
-      <img width="75%" src="https://res.cloudinary.com/dkng1fqtz/image/upload/v1584115531/IMG_0103_tu9xon.jpg" alt="8"></img>
-      <h4>
-
-        Thank you for viewing my site, particularly this page. I've been fortunate enough to have fulfilled a dream at a young age. I am now married with 3 kids, and aim to use my life to their benefit as best as I am able. Building a family, is something I've always wanted to do, in conjunction, building in general is what drives me. Whether it is woodworking, watching a garden grow or </h4>
+      <div className="title"><p className="about-title">About Me</p></div>
+      <h4><img width="75%" className="left" src="https://res.cloudinary.com/dkng1fqtz/image/upload/v1584115531/IMG_0103_tu9xon.jpg" alt="8"></img><img width="75%" src="https://res.cloudinary.com/dkng1fqtz/image/upload/v1584115531/IMG_0103_tu9xon.jpg" className="right" alt="11"></img>
+       Thank you for viewing my site, particularly this page.
+      I've been fortunate enough to have fulfilled a dream at a young age.
+      I am now married with 3 kids, and aim to use my life to their benefit as best as I am able.
+      Building a family, is something I've always wanted to do, in conjunction, building in general is what drives me. Whether it is woodworking, watching a garden grow or </h4>
       </div>
 
  
       </div>
+      
       {/* displaying all at once */}
       <div className="about">
         <div className="about-me">
@@ -163,6 +166,8 @@ function About() {
       </div>
       <Hobbies /> 
       <Nav />
+      <Footer />
+
     </div>
     
   );
