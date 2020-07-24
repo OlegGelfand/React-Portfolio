@@ -12,7 +12,7 @@ import Main from "./Main";
 function App() {
 
   const [projects, setProjects] = useState([]);
-  const [projectIndex,setProjectIndex]=useState();
+  const [projectIndex,setProjectIndex]=useState("");
 
 
   useEffect(() => {
