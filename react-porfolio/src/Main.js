@@ -13,7 +13,7 @@ function Main() {
         <Route exact={true} path="/" component={Home} />
         <Route exact path="/aboutme" component={About} />
         <Route exact path="/projects" component={Projects} />
-        <Route exact path="/projects/:title" component={ProjectListItem} />
+        <Route exact path="/projects/:title" component={ProjectDescription} />
         <Route
           exact
           path="/projectdescription"
