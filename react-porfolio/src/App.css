@@ -806,3 +806,52 @@ h4 img {
 .indi {
   color:black;
 }
+
+.project-detail>img {
+  background-color: gray;
+  box-shadow:   8px 0 rgba(107, 107, 0, 0.2),
+    0 6px 20px 8px rgba(107, 79, 79), 0 6px 2px 0 rgba(0, 0, 0, 0.5);
+ 
+  margin-left:30%;
+  margin-right:15%;
+  width:600px;
+}
+.project-detail>img {
+  border:5px solid black;
+  box-shadow:   8px 0 rgba(107, 107, 0, 0.2),
+  0 6px 20px 8px rgba(107, 79, 79), 0 6px 2px 0 rgba(0, 0, 0, 0.5);
+  
+}
+.project-detail {
+  display:grid;
+  grid-template-columns: 20% 80%;
+  /* grid-template-rows: 1fr 1 fr; */
+  box-shadow:   8px 0 rgba(107, 107, 0, 0.2),
+  0 6px 20px 8px rgba(107, 79, 79), 0 6px 2px 0 rgba(0, 0, 0, 0.5);
+  width:60%;
+  margin-left:20%;
+}
+.url{
+  color: black;
+  z-index: 4;
+  margin-left: 10%;
+  background-color: yellow;
+  text-align: center;
+  margin-top:20%;
+}
+.image{
+  width:80%;
+  height:80%;
+}
+.pic:nth-of-type(1){
+  padding-top:50%;
+  color:white;
+}
+.pic:nth-of-type(2){
+  padding-top:0%;
+  color:black;
+}
+.project-details{
+  padding-top:20px;
+  margin:20px;
+}
