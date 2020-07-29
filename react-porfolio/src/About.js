@@ -4,7 +4,7 @@ import { UncontrolledCarousel } from "reactstrap";
 import Nav from "./Nav";
 import NavTop from "./NavTop";
 import Hobbies from "./Hobbies";
-import Footer from "./Footer";
+import ProjectFooter from "./ProjectFooter";
 function About() {
   const [display1, setDisplay1] = useState(false);
   const [display2, setDisplay2] = useState(false);
@@ -114,21 +114,22 @@ function About() {
 
  
       </div>
-      
+      <h4 className="heading">A little more personal</h4>
       {/* displaying all at once */}
       <div className="about">
+        
         <div className="about-me">
         <div className="button">
             <button
               onClick={!display1 ? handleHideAboutMe1 : handleDisplayAboutMe1}
             >
               {" "}
-              <h1>Yitzi</h1>{" "}
+              <h1>Hobbies</h1>{" "}
             </button>
             {display1 ? <UncontrolledCarousel items={items} /> : null}
           </div>
         </div>
-        <div className="about-me">
+        {/* <div className="about-me">
         <div className="button">
             <button
               onClick={!display2 ? handleHideAboutMe2 : handleDisplayAboutMe2}
@@ -138,19 +139,19 @@ function About() {
             </button>
             {display2 ? <UncontrolledCarousel items={items2} /> : null}
           </div>
-        </div>
+        </div> */}
         <div className="about-me">
           <div className="button">
             <button 
               onClick={!display3 ? handleHideAboutMe3 : handleDisplayAboutMe3}
             >
               {" "}
-              <h1>Pinny</h1>{" "}
+              <h1>Family</h1>{" "}
             </button>
             {display3 ? <UncontrolledCarousel items={items} /> : null}
           </div>
           </div>
-          <div className="about-me">
+          {/* <div className="about-me">
           <div className="button">
             <button 
               onClick={!display1 && !display2 && !display3 ? handleHideAboutMeAll : handleDisplayAboutMeAll }
@@ -158,15 +159,15 @@ function About() {
               {" "}
               <h1>Family</h1>{" "}
             </button>
-            {/* {displayAll ? <UncontrolledCarousel items={items} /> : null} */}
+            {displayAll ? <UncontrolledCarousel items={items} /> : null}
           </div>
-          </div>
+          </div> */}
       </div>
       
       </div>
-      <Hobbies /> 
+      {/* <Hobbies />  */}
       <Nav />
-      <Footer />
+      <ProjectFooter />
 
     </div>
     
