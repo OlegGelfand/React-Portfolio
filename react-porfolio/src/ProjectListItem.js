@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { UniversalContext } from "./App";
-import history from "./history";
+
 import { Link } from "react-router-dom";
 function ProjectListItem(props) {
   const projectContext = useContext(UniversalContext);
