@@ -3,7 +3,7 @@ import { UncontrolledCarousel } from "reactstrap";
 // import { Link } from "react-router-dom";
 import Nav from "./Nav";
 import NavTop from "./NavTop";
-import Hobbies from "./Hobbies";
+// import Hobbies from "./Hobbies";
 import ProjectFooter from "./ProjectFooter";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -56,33 +56,33 @@ function About() {
       key: "3",
     },
   ];
-  const items2 = [
-    {
-      src:
-        "https://res.cloudinary.com/dkng1fqtz/image/upload/v1591306955/IMG_3245_k6y6zu.jpg",
-      altText: "Slide 1",
-      caption: "Slide 1",
-      header: "Slide 1 Header",
-      hieght: 2,
-      key: "1",
-    },
-    {
-      src:
-        "https://res.cloudinary.com/dkng1fqtz/image/upload/v1591306946/IMG_3659_xe92gr.jpg",
-      altText: "Slide 2",
-      caption: "Slide 2",
-      header: "Slide 2 Header",
-      key: "2",
-    },
-    {
-      src:
-        "https://res.cloudinary.com/dkng1fqtz/image/upload/v1591306884/IMG_3239_rh0yqi.jpg",
-      altText: "Slide 3",
-      caption: "Slide 3",
-      header: "Slide 3 Header",
-      key: "3",
-    },
-  ];
+  // const items2 = [
+  //   {
+  //     src:
+  //       "https://res.cloudinary.com/dkng1fqtz/image/upload/v1591306955/IMG_3245_k6y6zu.jpg",
+  //     altText: "Slide 1",
+  //     caption: "Slide 1",
+  //     header: "Slide 1 Header",
+  //     hieght: 2,
+  //     key: "1",
+  //   },
+  //   {
+  //     src:
+  //       "https://res.cloudinary.com/dkng1fqtz/image/upload/v1591306946/IMG_3659_xe92gr.jpg",
+  //     altText: "Slide 2",
+  //     caption: "Slide 2",
+  //     header: "Slide 2 Header",
+  //     key: "2",
+  //   },
+  //   {
+  //     src:
+  //       "https://res.cloudinary.com/dkng1fqtz/image/upload/v1591306884/IMG_3239_rh0yqi.jpg",
+  //     altText: "Slide 3",
+  //     caption: "Slide 3",
+  //     header: "Slide 3 Header",
+  //     key: "3",
+  //   },
+  // ];
 
   return (
     <div>
@@ -156,7 +156,7 @@ data-aos-easing="ease-in-out"className="rect">
       {/* <div className="about">
           <div className="about-me1"> */}
 
-      // <div className="button"></div>
+       <div className="button"></div>
       {/* </div> 
       </div>  */}
       <Nav />
